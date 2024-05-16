@@ -90,3 +90,13 @@ websites[websites.length] = 'codewars';
 
 //Other:
 websites.push('codewars');
+
+// 5. Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+// My Solution: 
+function removeExclamationMarks(s) {
+  const newS = s.replace(/!/g, "");
+  return newS;
+}
+
+// Other Solution:
+const removeExclamationMarks = s => s.replace(/!/g,"") ;
