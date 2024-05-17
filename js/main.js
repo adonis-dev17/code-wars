@@ -100,3 +100,18 @@ function removeExclamationMarks(s) {
 
 // Other Solution:
 const removeExclamationMarks = s => s.replace(/!/g,"") ;
+
+//6. Write a function that will add spaces inside the string. Example: 'toy' = t' 'o' 'y.
+
+function textSpacer(str1) {
+  let newStr='';
+  for(let i=0; i<str1.length;i++){
+    if (str1[i] == str1[str1.length-1]) {
+      newStr += str1[i]
+    }else {
+      newStr += str1[i] + " ";
+    }
+  }
+  console.log(newStr);
+}
+textSpacer('Boyish');
