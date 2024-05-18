@@ -140,19 +140,23 @@ function takesThreeArguments(operator, value1, value2) {
 var result = takesThreeArguments('+', 4, 7);
 console.log(result);
 
-// Sentence Smash
+// 8. Sentence Smash
 // Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. 
 // You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
 // Be careful, there shouldn't be a space at the beginning or the end of the sentence!
 
+let aria = ['The', 'Lord', 'is', 'my', 'sheperd.'];
 function arraySmashIntoSentence(arr1) {
   let newArr1 = [];
+  const arr2 = [];
   for(let i=0; i<arr1.length;i++){
     if (arr1[i] == arr1[arr1.length-1]) {
       newArr1 += arr1[i]
     }else {
-      newArr1 += arr1[i] + " ";
+      newArr1 += arr1[i] + arr2[];
     }
   }
-  console.log(newArr1);
+  return newArr1;
 }
+
+arraySmashIntoSentence(aria)
