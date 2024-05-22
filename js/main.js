@@ -56,3 +56,107 @@ function squareSum(numbers){
 
 // 
 const squareSum = numbers => numbers.reduce((a, b)=> a + b**2, 0)
+
+// 3. Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
+
+// Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :)
+
+// If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+// If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+
+//Solution:
+function hoopCount (n) {
+  //your code goes here    
+ if (n >= 10) {
+     return 'Great, now move on to tricks'
+ } else {
+   return 'Keep at it until you get it'
+ }
+ return n;
+}
+
+Other:
+function hoopCount (n) {
+  return (n < 10) ? 'Keep at it until you get it' : 'Great, now move on to tricks';
+}
+
+// 4. Add the value "codewars" to the websites array.
+// After your code executes the websites array should == ["codewars"]
+// The websites array has already been defined for you using the following code:
+// var websites = [];
+
+//My Solution:
+websites[websites.length] = 'codewars';
+
+//Other:
+websites.push('codewars');
+
+// 5. Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+// My Solution: 
+function removeExclamationMarks(s) {
+  const newS = s.replace(/!/g, "");
+  return newS;
+}
+
+// Other Solution:
+const removeExclamationMarks = s => s.replace(/!/g,"") ;
+
+//6. Write a function that will add spaces inside the string. Example: 'toy' = t' 'o' 'y.
+
+function textSpacer(str1) {
+  let newStr='';
+  for(let i=0; i<str1.length;i++){
+    if (str1[i] == str1[str1.length-1]) {
+      newStr += str1[i]
+    }else {
+      newStr += str1[i] + " ";
+    }
+  }
+  console.log(newStr);
+}
+textSpacer('Boyish');
+
+// 7. The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+// Examples(Operator, value1, value2) --> output
+
+function takesThreeArguments(operator, value1, value2) {
+  switch (operator) {
+    case '+':
+      return value1 + value2;
+    case '-':
+      return value1 - value2;
+    case '*':
+      return value1 * value2;
+    case '/':
+      return value1 / value2;
+    case '%':
+      return value1 % value2;
+    default:
+      return 'Invalid operator';
+  }
+}
+
+var result = takesThreeArguments('+', 4, 7);
+console.log(result);
+
+// 8. Sentence Smash
+// Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. 
+// You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
+// Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+let verbo = ['Hello','World'];
+
+function smash(words) {
+  let sentence = "";
+  for(let i=0; i<words.length;i++){
+    if (words[i].includes(" ")) {
+      sentence += words[i];
+    } else {
+      sentence += words[i] + " ";
+    }
+  }
+  return sentence.trim(); // trim() to remove any extra space at the end
+}
+
+console.log(smash(verbo));
