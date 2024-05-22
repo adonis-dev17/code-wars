@@ -148,15 +148,28 @@ console.log(result);
 let aria = ['The', 'Lord', 'is', 'my', 'sheperd.'];
 function arraySmashIntoSentence(arr1) {
   let newArr1 = [];
-  const arr2 = [];
+  
   for(let i=0; i<arr1.length;i++){
     if (arr1[i] == arr1[arr1.length-1]) {
       newArr1 += arr1[i]
     }else {
-      newArr1 += arr1[i] + arr2[];
+      newArr1 += arr1[i] + "  ";
     }
   }
   return newArr1;
 }
 
 arraySmashIntoSentence(aria)
+
+//9. The cockroach is one of the fastest insects. 
+// Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+
+function cockroachSpeedConversion(speed) {
+  if(speed >= 0) {
+    let convertedSpeed;
+    convertedSpeed = Math.floor(speed * 27.7778);
+    return `${convertedSpeed} cm/s`
+  } else {
+    console.log('Please enter real numbers.')
+  } 
+}
