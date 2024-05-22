@@ -189,6 +189,10 @@ function cockroachSpeedConversion(speed) {
 
 // Clever Solution
 const cockroachSpeed = s => Math.floor(s / 0.036);
+
+// Clever
+const cockroachSpeed = s => 
+  s / 3.6e-2 ^ 0;
 =======
 
 >>>>>>> 4d89c88a897182509832fb526030b4705323fbba
