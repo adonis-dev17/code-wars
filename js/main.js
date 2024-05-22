@@ -170,7 +170,7 @@ function smash(words) {
   }
   return sentence.trim(); // trim() to remove any extra space at the end
 }
-
+console.log(smash(verbo));
 <<<<<<< HEAD
 arraySmashIntoSentence(aria)
 
@@ -187,5 +187,5 @@ function cockroachSpeedConversion(speed) {
   } 
 }
 =======
-console.log(smash(verbo));
+
 >>>>>>> 4d89c88a897182509832fb526030b4705323fbba
