@@ -186,6 +186,9 @@ function cockroachSpeedConversion(speed) {
     console.log('Please enter real numbers.')
   } 
 }
+
+// Clever Solution
+const cockroachSpeed = s => Math.floor(s / 0.036);
 =======
 
 >>>>>>> 4d89c88a897182509832fb526030b4705323fbba
