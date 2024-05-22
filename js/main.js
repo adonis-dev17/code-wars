@@ -145,6 +145,7 @@ console.log(result);
 // You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
 // Be careful, there shouldn't be a space at the beginning or the end of the sentence!
 
+<<<<<<< HEAD
 let aria = ['The', 'Lord', 'is', 'my', 'sheperd.'];
 function arraySmashIntoSentence(arr1) {
   let newArr1 = [];
@@ -154,11 +155,23 @@ function arraySmashIntoSentence(arr1) {
       newArr1 += arr1[i]
     }else {
       newArr1 += arr1[i] + "  ";
+=======
+let verbo = ['Hello','World'];
+
+function smash(words) {
+  let sentence = "";
+  for(let i=0; i<words.length;i++){
+    if (words[i].includes(" ")) {
+      sentence += words[i];
+    } else {
+      sentence += words[i] + " ";
+>>>>>>> 4d89c88a897182509832fb526030b4705323fbba
     }
   }
-  return newArr1;
+  return sentence.trim(); // trim() to remove any extra space at the end
 }
 
+<<<<<<< HEAD
 arraySmashIntoSentence(aria)
 
 //9. The cockroach is one of the fastest insects. 
@@ -173,3 +186,6 @@ function cockroachSpeedConversion(speed) {
     console.log('Please enter real numbers.')
   } 
 }
+=======
+console.log(smash(verbo));
+>>>>>>> 4d89c88a897182509832fb526030b4705323fbba
