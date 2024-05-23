@@ -159,8 +159,8 @@ function arraySmashIntoSentence(arr1) {
   return sentence.trim(); // trim() to remove any extra space at the end
 }
 console.log(smash(verbo));
-arraySmashIntoSentence(aria)
 
+<<<<<<< HEAD
 //9. The cockroach is one of the fastest insects. 
 // Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 
@@ -216,3 +216,8 @@ powersOfTwo(2);
 // }
 
 // console.log(results); // outputs: [0, 2, 4, 6, 8]
+=======
+//9. Make an array of dogs and reverse them alphabetically
+let dogs = ['Bulldog', 'Pug', 'Dalmatian', 'Chihuahua', 'Havanese', 'Maltese', 'Pug'];
+dogs.sort().reverse();
+>>>>>>> db2ab72986a6663f36f1b795b616d0bde13f474c
