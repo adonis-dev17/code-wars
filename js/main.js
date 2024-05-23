@@ -145,23 +145,17 @@ console.log(result);
 // You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
 // Be careful, there shouldn't be a space at the beginning or the end of the sentence!
 
-let verbo = ['Hello','World'];
-
-function smash(words) {
-  let sentence = "";
-  for(let i=0; i<words.length;i++){
-    if (words[i].includes(" ")) {
-      sentence += words[i];
-    } else {
-      sentence += words[i] + " ";
+let aria = ['The', 'Lord', 'is', 'my', 'sheperd.'];
+function arraySmashIntoSentence(arr1) {
+  let newArr1 = [];
+  
+  for(let i=0; i<arr1.length;i++){
+    if (arr1[i] == arr1[arr1.length-1]) {
+      newArr1 += arr1[i]
+    }else {
+      newArr1 += arr1[i] + "  ";
     }
   }
   return sentence.trim(); // trim() to remove any extra space at the end
 }
-
 console.log(smash(verbo));
-
-// 9. Make an array of dogs and reverse them alphabetically.
-let dogs = ['Bulldog', 'Pug', 'Dalmatian', 'Chihuahua', 'Havanese', 'Maltese', 'Pug'];
-dogs.sort().reverse();
-
