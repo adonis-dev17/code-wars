@@ -187,3 +187,32 @@ const cockroachSpeed = s =>
 function solution(str){
   return str.split('').reverse().join('');
 }
+
+//. 10 Complete the function that takes a non-negative integer n as input, 
+// and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+let results = []; 
+
+function powersOfTwo(n) {
+  let result = 1;
+  for (let i=0; i<=n; i++) {
+    if (i==0) {
+      results.push(result);
+    }else { 
+      result = result * 2;
+      results.push(result);
+    }
+  }
+  console.log(results);
+}
+powersOfTwo(0);
+powersOfTwo(1);
+powersOfTwo(2);
+
+// //const results = []; // empty array to store results
+
+// for (let i = 0; i < 5; i++) {
+//   const result = i * 2; // example calculation
+//   results.push(result); // push the result into the array
+// }
+
+// console.log(results); // outputs: [0, 2, 4, 6, 8]
