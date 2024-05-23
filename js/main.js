@@ -160,3 +160,8 @@ function smash(words) {
 }
 
 console.log(smash(verbo));
+
+// 9. Make an array of dogs and reverse them alphabetically
+let dogs = ['Bulldog', 'Pug', 'Dalmatian', 'Chihuahua', 'Havanese', 'Maltese', 'Pug'];
+dogs.sort().reverse();
+
