@@ -160,7 +160,6 @@ function arraySmashIntoSentence(arr1) {
 }
 console.log(smash(verbo));
 
-<<<<<<< HEAD
 //9. The cockroach is one of the fastest insects. 
 // Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 
@@ -188,36 +187,31 @@ function solution(str){
   return str.split('').reverse().join('');
 }
 
-//. 10 Complete the function that takes a non-negative integer n as input, 
+//10. Make an array of dogs and reverse them alphabetically
+let dogs = ['Bulldog', 'Pug', 'Dalmatian', 'Chihuahua', 'Havanese', 'Maltese', 'Pug'];
+dogs.sort().reverse();
+
+
+//. 11 Complete the function that takes a non-negative integer n as input, 
 // and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
-let results = []; 
 
 function powersOfTwo(n) {
+  let results = []; 
   let result = 1;
-  for (let i=0; i<=n; i++) {
-    if (i==0) {
-      results.push(result);
-    }else { 
+  if (n==0) {
+    results.push(result);
+  } else {
+    results.push(result);
+    for (let i=1; i<=n; i++) {
       result = result * 2;
       results.push(result);
-    }
+    } 
   }
   console.log(results);
 }
 powersOfTwo(0);
-powersOfTwo(1);
-powersOfTwo(2);
 
-// //const results = []; // empty array to store results
 
-// for (let i = 0; i < 5; i++) {
-//   const result = i * 2; // example calculation
-//   results.push(result); // push the result into the array
-// }
 
-// console.log(results); // outputs: [0, 2, 4, 6, 8]
-=======
-//9. Make an array of dogs and reverse them alphabetically
-let dogs = ['Bulldog', 'Pug', 'Dalmatian', 'Chihuahua', 'Havanese', 'Maltese', 'Pug'];
-dogs.sort().reverse();
->>>>>>> db2ab72986a6663f36f1b795b616d0bde13f474c
+
+
