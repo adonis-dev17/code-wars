@@ -231,3 +231,7 @@ function findSmallestInt(arr) {
 }
 findSmallestInt([34, 15, 88, 2]);
 findSmallestInt([34, -345, -1, 100]);
+
+// Other option
+
+let minValue = Math.min.apply(null, arr);
