@@ -221,4 +221,13 @@ function powersOfTwo(n){
 }
 
 
+// 12. Given an array of integers your solution should find the smallest integer.
 
+function findSmallestInt(arr) {
+  //your code here
+  let minVal = Math.min(...arr);
+  console.log(minVal);
+  return 0;
+}
+findSmallestInt([34, 15, 88, 2]);
+findSmallestInt([34, -345, -1, 100]);
