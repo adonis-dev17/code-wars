@@ -244,7 +244,8 @@ function countSheep(count) {
   let totalMurmur = '';
   for(let i = 1; i<=positiveCount; i++ ) {
     murmur = `${i} sheep`;
-    totalMurmur = totalMurmur.concat('' + murmur);
+    totalMurmur = totalMurmur.concat('...' + murmur);
   }
   return totalMurmur;
 }
+countSheep(1);
