@@ -235,3 +235,16 @@ findSmallestInt([34, -345, -1, 100]);
 // Other option
 
 let minValue = Math.min.apply(null, arr);
+// 13 Given a non-negative integer, 3 for example, return a string with a murmur: 
+// "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+
+function countSheep(count) {
+  let positiveCount = Math.abs(count);
+  let murmur; 
+  let totalMurmur = '';
+  for(let i = 1; i<=positiveCount; i++ ) {
+    murmur = console.log(`${i} sheep`);
+    totalMurmur = totalMurmur.concat('' + murmur);
+  }
+  return totalMurmur;
+}
