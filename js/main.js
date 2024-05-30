@@ -235,6 +235,7 @@ findSmallestInt([34, -345, -1, 100]);
 // Other option
 
 let minValue = Math.min.apply(null, arr);
+<<<<<<< HEAD
 
 //13.Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
 
@@ -254,3 +255,19 @@ function func2() {
 }
 
 _if(test, func1, func2);
+=======
+// 13 Given a non-negative integer, 3 for example, return a string with a murmur: 
+// "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+
+function countSheep(count) {
+  let positiveCount = Math.abs(count);
+  let murmur; 
+  let totalMurmur = '';
+  for(let i = 1; i<=positiveCount; i++ ) {
+    murmur = `${i} sheep`;
+    totalMurmur = totalMurmur.concat(murmur + '...' );
+  }
+  return totalMurmur;
+}
+countSheep(1);
+>>>>>>> 5decfe90de48c542f94f246cef0277882ec8d572
