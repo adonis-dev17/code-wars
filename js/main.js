@@ -235,7 +235,6 @@ findSmallestInt([34, -345, -1, 100]);
 // Other option
 
 let minValue = Math.min.apply(null, arr);
-<<<<<<< HEAD
 
 //13.Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
 
@@ -255,19 +254,33 @@ function func2() {
 }
 
 _if(test, func1, func2);
-=======
-// 13 Given a non-negative integer, 3 for example, return a string with a murmur: 
-// "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
 
-function countSheep(count) {
-  let positiveCount = Math.abs(count);
-  let murmur; 
-  let totalMurmur = '';
-  for(let i = 1; i<=positiveCount; i++ ) {
-    murmur = `${i} sheep`;
-    totalMurmur = totalMurmur.concat(murmur + '...' );
+//14
+
+function invertValues(n) {
+  for(let i=0; i<n.length; i++) {
+    if (n[0] > o) {
+      n
+    }
   }
-  return totalMurmur;
 }
-countSheep(1);
->>>>>>> 5decfe90de48c542f94f246cef0277882ec8d572
+
+//14. You are given two sorted arrays that both only contain integers. Your task is to find a way to merge them into a single one, sorted in asc order. Complete the function mergeArrays(arr1, arr2), where arr1 and arr2 are the original sorted arrays.
+
+// You don't need to worry about validation, since arr1 and arr2 must be arrays with 0 or more Integers. If both arr1 and arr2 are empty, then just return an empty array.
+
+// Note: arr1 and arr2 may be sorted in different orders. Also arr1 and arr2 may have same integers. Remove duplicated in the returned result.
+function mergeArrays(arr1, arr2) {
+  if (arr1.length === 0 && arr2.length === 0) {
+    return [];
+  }
+    const combinedArrays = [...arr1, ...arr2];
+    combinedArrays.sort((a, b) => a-b);
+    const finalSet = new Set(combinedArrays);
+    return Array.from(finalSet);
+  }
+// Clever
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+}
+
