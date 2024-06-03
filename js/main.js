@@ -287,3 +287,14 @@ function mergeArrays(arr1, arr2) {
 // 15. Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 
 let boolToWord = bool =>  bool ? 'Yes' : 'No';
+
+// 16. Logs odd or even numbers in an array.
+
+const nums = [2, 5, 6, 11];
+
+const oddOrEven = nums.map(x => (
+ x%2 === 0 ? 'Even' :  'Odd'
+));
+
+console.log(oddOrEven);
+
