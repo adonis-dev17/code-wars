@@ -284,3 +284,6 @@ function mergeArrays(arr1, arr2) {
   return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
 }
 
+// 15. Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+let boolToWord = bool =>  bool ? 'Yes' : 'No';
