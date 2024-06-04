@@ -298,3 +298,20 @@ const oddOrEven = nums.map(x => (
 
 console.log(oddOrEven);
 
+// 17. Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives. 
+
+
+function invert(array) {
+  const invertedArray = array.map(x => x * -1);
+   return invertedArray;
+}
+invert([1, 2, 3, 4, 5]);
+
+// clever
+const invert = array => array.map(num => -num);
+// Other Solution
+function invert(array) {
+  return array.map( x => x === 0 ? x : -x);
+}
+
+
